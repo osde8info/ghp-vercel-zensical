@@ -55,20 +55,25 @@ function toggleBreathing() {
 function startBreathing() {
     isBreathing = true;
     breathingBtn.textContent = 'Stop';
+    breathingBtn.setAttribute('aria-label', 'Stop breathing exercise');
     breathingCircle.classList.add('breathing');
     
     let phase = 0;
-    const phases = ['Breathe In', 'Hold', 'Breathe Out', 'Hold'];
+    const phases = ['Breathe In', 'Breathe Out'];
+    
+    // Set initial text immediately
+    breathingText.textContent = phases[0];
     
     breathingInterval = setInterval(() => {
-        breathingText.textContent = phases[phase];
         phase = (phase + 1) % phases.length;
-    }, 2000);
+        breathingText.textContent = phases[phase];
+    }, 4000);
 }
 
 function stopBreathing() {
     isBreathing = false;
     breathingBtn.textContent = 'Start';
+    breathingBtn.setAttribute('aria-label', 'Start breathing exercise');
     breathingCircle.classList.remove('breathing');
     breathingText.textContent = 'Breathe';
     

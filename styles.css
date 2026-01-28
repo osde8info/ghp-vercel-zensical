@@ -117,7 +117,7 @@ header {
     transition: transform 0.3s ease;
 }
 
-.circle:hover {
+.circle:hover:not(.breathing) {
     transform: scale(1.05);
 }
 
