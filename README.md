@@ -1,4 +1,4 @@
-# Zensical
+# Zen Inspired
 
 A minimalist zen-inspired website for GitHub Pages.
 
