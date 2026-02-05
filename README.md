@@ -14,10 +14,6 @@ A minimalist zen-inspired website for GitHub Pages.
 - **Responsive**: Works beautifully on desktop and mobile devices
 - **Accessible**: Full ARIA support for screen readers
 
-## Live Site
-
-Visit the site at: https://osde8info.github.io/ghp-vercel-zensical/
-
 ## Local Development
 
 Simply open `index.html` in your browser to view the site locally.
